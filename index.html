@@ -19,6 +19,24 @@
     <link rel="stylesheet" href="styles.css" />
     <style></style>
   </head>
+  <nav class="nav">
+        <a href="#" class="nav-item active" onclick="setActiveNav(this)"
+          >Home</a
+        >
+        <a href="#" class="nav-item" onclick="setActiveNav(this)">Components</a>
+        <a href="#" class="nav-item" onclick="setActiveNav(this)">Buttons</a>
+        <a href="#" class="nav-item" onclick="setActiveNav(this)">Forms</a>
+        <a href="#" class="nav-item" onclick="setActiveNav(this)">About</a>
+      </nav>
+
+  <header class="header">
+        <h1>WAD621S Interactive Web Application Styling Lab</h1>
+        <p>
+          Experiment with various UI components and see how styling affects
+          their appearance and behavior
+        </p >
+      </header>
+      
   <body>
     <div class="container">
       <button class="panel-toggle" onclick="togglePanel()">⚙️ Customize</button>
@@ -97,24 +115,6 @@
       <div class="panel-pull-tab" id="panelPullTab" onclick="togglePanel()">
         <i class="material-icons">palette</i>
       </div>
-
-      <header>
-        <h1>WAD621S Interactive Web Application Styling Lab</h1>
-        <p>
-          Experiment with various UI components and see how styling affects
-          their appearance and behavior
-        </p>
-      </header>
-
-      <nav class="nav">
-        <a href="#" class="nav-item active" onclick="setActiveNav(this)"
-          >Home</a
-        >
-        <a href="#" class="nav-item" onclick="setActiveNav(this)">Components</a>
-        <a href="#" class="nav-item" onclick="setActiveNav(this)">Buttons</a>
-        <a href="#" class="nav-item" onclick="setActiveNav(this)">Forms</a>
-        <a href="#" class="nav-item" onclick="setActiveNav(this)">About</a>
-      </nav>
 
       <div class="interactive-widgets">
         <div class="widget clock-widget">
@@ -525,7 +525,7 @@
               </ul>
             </div>
 
-            <div class="section">
+            <div class="section" id="forms">
               <h2>Forms</h2>
               <p>
                 Forms allow users to enter and submit data through various input
@@ -807,7 +807,7 @@
               </ul>
             </div>
 
-            <div class="section">
+            <div class="section" id="home">
               <h2>Breadcrumbs</h2>
               <p>
                 Breadcrumbs show the current page's location within a
@@ -849,7 +849,7 @@
                 >
               </p>
 
-              <button class="btn tooltip">
+              <button class="btn tooltip" id="button">
                 Button with tooltip
                 <span class="tooltip-text">This button does something</span>
               </button>
